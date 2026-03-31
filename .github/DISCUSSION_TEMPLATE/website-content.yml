@@ -1,0 +1,60 @@
+---
+title: "[Content] "
+labels: ["website-content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this category for discussions about our public-facing web presence: copywriting, page structure, content strategy, new pages, and improvements to existing content.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the content topic you want to discuss.
+      placeholder: A short overview of the content change or idea.
+    validations:
+      required: true
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content Type
+      description: What type of content does this discussion relate to?
+      options:
+        - New page
+        - Updates to existing page
+        - Blog / Article
+        - Copywriting / Tone of voice
+        - Navigation / Information architecture
+        - SEO
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Page or Section URL (if applicable)
+      description: Link to the relevant page or section on the website.
+      placeholder: "https://example.com/page"
+  - type: textarea
+    id: current_content
+    attributes:
+      label: Current Content
+      description: Paste or describe the existing content if you are proposing a change.
+  - type: textarea
+    id: proposed_content
+    attributes:
+      label: Proposed Content / Idea
+      description: What should the content say or look like? Be as specific as possible.
+      placeholder: Include draft text, structure ideas, or key messages you want to convey.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this change needed? What goal does it support (clarity, SEO, brand alignment, etc.)?
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: Any aspects you'd like feedback or a decision on.
