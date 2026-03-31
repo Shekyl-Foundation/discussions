@@ -1,0 +1,55 @@
+---
+title: "[UI/UX] "
+labels: ["ui-ux"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this category for design reviews, user experience improvements, accessibility feedback, and visual language discussions.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the design topic or UX issue you want to discuss.
+      placeholder: A short overview of the UI/UX topic.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which area does this discussion relate to?
+      options:
+        - Visual Design / Branding
+        - Layout & Navigation
+        - Accessibility
+        - Interaction Design
+        - Typography & Color
+        - Mobile / Responsive
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State
+      description: Describe or link to the current design/experience. Screenshots are very helpful here.
+      placeholder: What does it look like or behave like today?
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed Change
+      description: What improvement or change are you suggesting? Include mockups, sketches, or reference links where available.
+      placeholder: Describe your suggestion. Attach images using drag-and-drop if helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: user_impact
+    attributes:
+      label: User Impact
+      description: How will this change affect the end user's experience?
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: Any unresolved design decisions or trade-offs you'd like to discuss.

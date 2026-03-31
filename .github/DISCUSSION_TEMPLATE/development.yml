@@ -1,0 +1,40 @@
+---
+title: "[Dev] "
+labels: ["development"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this category for technical topics such as architecture decisions, engineering proposals, code standards, tooling choices, and development processes.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the topic or proposal.
+      placeholder: A short, one- to two-sentence overview of what you want to discuss.
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: Background & Motivation
+      description: Why is this topic important? What problem does it solve or what opportunity does it address?
+      placeholder: Provide relevant context, links to related issues/PRs, or prior discussions.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / Ideas
+      description: What are you suggesting or exploring? Include any concrete ideas, designs, or alternatives.
+      placeholder: Describe your proposal. Use code blocks, diagrams, or bullet points as needed.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Potential Impact
+      description: Who or what will be affected by this change? Consider performance, maintainability, developer experience, etc.
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open Questions
+      description: List any unresolved questions you'd like the community to help answer.

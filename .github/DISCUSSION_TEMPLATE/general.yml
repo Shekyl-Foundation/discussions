@@ -1,0 +1,37 @@
+---
+title: ""
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome! Use this category for anything that doesn't fit neatly into Development, GUI/UI-UX, or Website Content — including announcements, introductions, and general community conversation.
+  - type: textarea
+    id: content
+    attributes:
+      label: What's on your mind?
+      description: Share your thoughts, question, or announcement with the community.
+      placeholder: Write your message here. Be as detailed as you'd like.
+    validations:
+      required: true
+  - type: dropdown
+    id: post_type
+    attributes:
+      label: Post Type
+      description: What kind of post is this?
+      options:
+        - Question
+        - Announcement
+        - Introduction
+        - Idea / Suggestion
+        - Feedback
+        - Other
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before posting
+      options:
+        - label: I have searched existing discussions and this topic has not been covered.
+          required: true
+        - label: I have read the [Code of Conduct](../CODE_OF_CONDUCT.md).
+          required: true
